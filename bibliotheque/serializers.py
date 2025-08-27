@@ -21,3 +21,11 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ["id", "username", "password", "email"]
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
+    
+class UserRegisterJWTSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True)
+    class Meta:
+        model = User
+        fields = ["id", "username", "email", "password"]
+    def create(self, validated_data):
+        return User.objects.create_user(**validated_data)
