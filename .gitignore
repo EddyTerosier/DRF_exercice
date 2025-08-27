@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+*.pkl
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Paquets / builds
+build/
+dist/
+*.egg-info/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+*.log
+
+# Tests / outils
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# IDE / éditeurs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets / env
+.env
+.env.*
+!.env.example
